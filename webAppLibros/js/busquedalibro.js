@@ -1,7 +1,11 @@
 function bookSearch(){
   var search = document.getElementById('search').value
   $(".book").empty()
-  
+  var vec = [];
+  vec.push(search);
+  console.log(vec)
+  vec.join()
+  historial.innerHTML += "<br>"+ vec;
   console.log(search)
 
   $.ajax({
